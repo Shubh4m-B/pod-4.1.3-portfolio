@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<div class="banner">
+    <div class="container">
+        <div class="logo">
+            <a href="/">
+                <img src="/assets/img/mlh-prep.png"/>
+            </a>
+        </div>
+        <div class="title">
+            Name: {{ page.name }}
+        </div>
+    </div>
+</div>
+
+<div class="container page">
+    <img width="200px" style="margin: 10px;" src="../assets/img/{{page.img}}" />
+    <br>
+    <h2>Location {{page.location}}</h2>
+    <br>
+    <h3>About:</h3>
+    {{ content }}
+</div>

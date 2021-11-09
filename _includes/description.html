@@ -1,7 +1,8 @@
 <h2>Meet the Pod</h2>
+
 <div class="fellow-cards-container">
 	<div class="container">
-		{% for fellow in site.data.fellows %}
+		{% for fellow in site.fellows %}
 		<div class="card">
 			<div class="imgBx">
 				<img src="./assets/img/{{fellow.img}}" />
@@ -9,8 +10,9 @@
 			<div class="content">
 				<div class="details">
 					<h2>
-						<a>{{fellow.name}} </a>
+						<a href="{{ fellow.url }}">{{fellow.name}} </a>
 					</h2>
+                    <!-- <p class="location"> {{ fellow.location }}</p> -->
 					<ul class="social_icons">
 						<li>
 							<a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -31,3 +33,17 @@
 		{% endfor %}
 	</div>
 </div>
+
+<!-- 
+<div class="card-container">
+    {% for fellow in site.fellows %}
+    <a href="{{ fellow.url }}">
+    <div class="card">
+        <div class="info">
+            <p class="title"> {{ fellow.name }}</p>
+            <p class="location"> {{ fellow.location }}</p>
+        </div>
+    </div>
+    </a>
+    {% endfor %}
+</div> -->
