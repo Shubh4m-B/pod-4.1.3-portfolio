@@ -84,7 +84,12 @@ a {
 		position: relative;
 		width: 300px;
 		height: 350px;
-		background: linear-gradient(#2196f3, #2196f3 30%, #1d3548 30%, #1d3548);
+		background: rgb(252, 70, 107);
+		background: radial-gradient(
+			circle,
+			rgba(252, 70, 107, 1) 10%,
+			rgba(63, 94, 251, 1) 100%
+		);
 		margin: 10px;
 		border-radius: 20px;
 		overflow: hidden;
