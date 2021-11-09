@@ -2,7 +2,7 @@
 
 <div class="fellow-cards-container">
 	<div class="container">
-		{% for fellow in site.fellows %}
+		{% for fellow in site.data.fellows %}
 		<div class="card">
 			<div class="imgBx">
 				<img src="./assets/img/{{fellow.img}}" />
@@ -12,7 +12,6 @@
 					<h2>
 						<a href="{{ fellow.url }}">{{fellow.name}} </a>
 					</h2>
-                    <!-- <p class="location"> {{ fellow.location }}</p> -->
 					<ul class="social_icons">
 						<li>
 							<a href="#"><i class="fab fa-facebook-f"></i></a>
