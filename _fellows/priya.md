@@ -1,5 +1,4 @@
 ---
-title: My Profile
 name: Priya Bihani
 college: MAIT
 location: Delhi, IN

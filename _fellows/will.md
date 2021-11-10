@@ -1,5 +1,4 @@
 ---
-title: My Profile
 name: Will
 college: NITK
 location: London, UK
