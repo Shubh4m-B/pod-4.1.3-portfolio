@@ -1,15 +1,27 @@
 - name: Will
   img: logo.jpg
-  location: London, UK
+  location:
+    name: London, UK
+    latitude: 51.5072
+    longitude: 0.1276
 
 - name: Amanda
   img: amanda.jpg
-  location: New York City, USA
+  location:
+    name: New York City, USA
+    latitude: 40.7128
+    longitude: -74.0060
 
 - name: Aaron
   img: aaron.jpg
-  location: London, UK
+  location:
+    name: London, UK
+    latitude: 51.5072
+    longitude: 0.1276
 
 - name: Swift
   img: swift.jpg
-  location: New York City, USA
+  location:
+    name: New York City, USA
+    latitude: 40.7128
+    longitude: -74.0060
