@@ -1,7 +1,7 @@
 <h2>
   LeaderBoard
 </h2>
-<h2 class="label">Top Contributors</h2>
+<!-- <h2 class="label">Top Contributors</h2>
 <div class= "center-content">
   <div class="card card-leaderboard">
     <div class="card-body">
@@ -13,17 +13,17 @@
       <p class="card-text">Issues Solved: {{site.data.leading.issues}}</p>
     </div>
   </div>
-</div>
+</div> -->
 
 <div class="leaderboard-table">
   <table class="table table-bordered table-striped">
   <thead>
     <tr>
       <th scope="col">#</th>
-      <th scope="col">Name</th>
-      <th scope="col">username</th>
-      <th scope="col">Commits</th>
-      <th scope="col">PRs</th>
+      <th scope="col">Team</th>
+      <th scope="col">Member 1</th>
+      <th scope="col">Member 2</th>
+      <th scope="col">PRs Merged</th>
     </tr>
   </thead>
   <tbody>
@@ -32,9 +32,13 @@
 
     <tr>
       <th scope="row">{{item.rank}}</th>
-      <td>{{item.name}}</td>
-      <td>{{item.username}}</td>
-      <td>{{item.commits}}</td>
+      <td>Team {{item.team}}</td>
+      <td>
+        <a href={{item.username1git}} target="_blank">{{item.username1}}</a>
+      </td>
+      <td>
+        <a href={{item.username2git}} target="_blank">{{item.username2}}</a>
+      </td>
       <td>
         {{item.PRs}}
       </td>

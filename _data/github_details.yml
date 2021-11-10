@@ -1,29 +1,47 @@
-- rank: 2
-  name: Sumana Basu
-  username: sumana2001
-  commits: 625
-  PRs: 42
+- rank: 1
+  team: 6
+  username1: Sai Keshari
+  username2: Neha Kumari
+  username1git: https://github.com/saikeshari
+  username2git: https://github.com/neha-93
+  PRs: 1
 
-# - rank: 1
-#   name: Akshita Dixit
-#   username: akshitadixit
-#   commits: 780
-#   PRs: 111
+- rank: 2
+  team: 1
+  username1: Yuheng Wu
+  username2: Abdulrahman Yusuf
+  username1git: https://github.com/iamwyh2019
+  username2git: https://github.com/Young-Einstein10
+  PRs: 0
 
 - rank: 3
-  name: Shubham Bhardwaj
-  username: Shubh4m-B
-  commits: 438
-  PRs: 18
+  team: 2
+  username1: Ojuswi Rastogi
+  username2: Gaurav Kumar
+  username1git: https://github.com/OjusWiZard
+  username2git: https://github.com/GrayFlash
+  PRs: 0
 
 - rank: 4
-  name: Ojuswi Rastogi
-  username: OjusWizard
-  commits: 224
-  PRs: 23
+  team: 3
+  username1: Adarsh Naidu
+  username2: Priya Bihani
+  username1git: https://github.com/adarshnaidu
+  username2git: https://github.com/PriyaBihani
+  PRs: 0
 
 - rank: 5
-  name: Sai Keshari
-  username: saikeshari
-  commits: 217
-  PRs: 8
+  team: 4
+  username1: Akshita Dixit
+  username2: Shubham Bhardwaj
+  username1git: https://github.com/akshitadixit
+  username2git: https://github.com/Shubh4m-B
+  PRs: 0
+
+- rank: 6
+  team: 5
+  username1: Sumana Basu
+  username2: Hou Chi Chan
+  username1git: https://github.com/sumana2001
+  username2git: https://github.com/SciencePotato
+  PRs: 0
