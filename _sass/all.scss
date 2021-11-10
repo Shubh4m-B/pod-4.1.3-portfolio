@@ -10,6 +10,33 @@
     font-family: "Open Sans", sans-serif;
 }
 
+.github-stats{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  img{
+  margin: 10px 10px 0 10px;
+  }
+}
+
+.git_stats{
+  height: 200px;
+}
+
+.lang_stats{
+  height: 200px;
+}
+
+.label {
+  margin: 5px auto;
+  font-size: 0.9rem;
+}
+
+.leaderboard-table{
+  margin: 40px 90px;
+}
+
 @media only screen and (max-width: 1500px) {
   .card-container {
     grid-template-columns: repeat(3, 1fr);
@@ -20,11 +47,23 @@
   .card-container {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .leaderboard-table{
+    margin: 30px 70px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   .card-container {
     grid-template-columns: 1fr;
+  }
+
+  .github-stats img {
+    max-width: 90%;
+  }
+
+  .leaderboard-table{
+    margin: 25px 50px;
   }
 }
 

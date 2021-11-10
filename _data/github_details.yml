@@ -1,0 +1,29 @@
+- rank: 2
+  name: Sumana Basu
+  username: sumana2001
+  commits: 625
+  PRs: 42
+
+# - rank: 1
+#   name: Akshita Dixit
+#   username: akshitadixit
+#   commits: 780
+#   PRs: 111
+
+- rank: 3
+  name: Shubham Bhardwaj
+  username: Shubh4m-B
+  commits: 438
+  PRs: 18
+
+- rank: 4
+  name: Ojuswi Rastogi
+  username: OjusWizard
+  commits: 224
+  PRs: 23
+
+- rank: 5
+  name: Sai Keshari
+  username: saikeshari
+  commits: 217
+  PRs: 8

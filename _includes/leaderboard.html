@@ -1,3 +1,38 @@
 <h2>
-    leaderboard
+  LeaderBoard
 </h2>
+<h2 class="label">Top Contributors</h2>
+<div class="github-stats">
+      <img class="git_stats" alt="Github statistics" src="https://github-readme-stats.vercel.app/api?username=akshitadixit&show_icons=true&theme=default">
+      <img class="lang_stats" alt="Most used languages on github" src="https://github-readme-stats.vercel.app/api/top-langs/?username=akshitadixit&layout=compact">
+</div>
+
+<div class="leaderboard-table">
+  <table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">username</th>
+      <th scope="col">Commits</th>
+      <th scope="col">PRs</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    {% for item in site.data.github_details %}
+
+    <tr>
+      <th scope="row">{{item.rank}}</th>
+      <td>{{item.name}}</td>
+      <td>{{item.username}}</td>
+      <td>{{item.commits}}</td>
+      <td>
+        {{item.PRs}}
+      </td>
+    </tr>
+    {% endfor %}
+
+  </tbody>
+</table>
+</div>
