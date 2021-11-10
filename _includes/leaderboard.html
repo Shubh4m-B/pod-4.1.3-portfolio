@@ -2,9 +2,17 @@
   LeaderBoard
 </h2>
 <h2 class="label">Top Contributors</h2>
-<div class="github-stats">
-      <img class="git_stats" alt="Github statistics" src="https://github-readme-stats.vercel.app/api?username=akshitadixit&show_icons=true&theme=default">
-      <img class="lang_stats" alt="Most used languages on github" src="https://github-readme-stats.vercel.app/api/top-langs/?username=akshitadixit&layout=compact">
+<div class= "center-content">
+  <div class="card card-leaderboard">
+    <div class="card-body">
+      <h5 class="card-title"><i class="fas fa-angle-double-up fa-lg"></i> Currently Leading....</h5>
+      <p class="card-subtitle">Team {{site.data.leading.team_name}}</p>
+        <p class="card-text card-container"><img class="github-image" src="https://avatars.githubusercontent.com/{{site.data.leading.member1}}" />
+        <img class="github-image" src="https://avatars.githubusercontent.com/{{site.data.leading.member2}}" /></p>
+        <p class="card-text card-container"> <span>{{site.data.leading.member1}}</span> <span>{{site.data.leading.member2}}</span></p>
+      <p class="card-text">Issues Solved: {{site.data.leading.issues}}</p>
+    </div>
+  </div>
 </div>
 
 <div class="leaderboard-table">
