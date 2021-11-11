@@ -13,7 +13,15 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 }).addTo(ourMap);
 
 var fellows = {{ site.data.fellows | jsonify}};
-fellows.forEach(fellow => {
+
+fellows.forEach((fellow)=>{
     var marker = L.marker([fellow.location.latitude, fellow.location.longitude]).addTo(ourMap);
-    marker.bindPopup(fellow.name);
-});
+
+    const card = ` 
+      <div class="container">
+        <h4><b>${fellow.name}</b></h4>
+        ${fellow.location.name}<br/>
+      </div>
+      `
+    marker.bindPopup(card);
+})
