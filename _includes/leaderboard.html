@@ -3,7 +3,6 @@
 </h2>
 
 <div class="leaderboard-table">
-  {% assign github_data = site.data.github_details %}
   <table class="table table-bordered table-striped">
   <thead>
     <tr>
@@ -75,34 +74,31 @@
 ]
 
 
-  const fetchGithubStats = (index,team) => {
-    // console.log(team.username1);
-    axios.get('https://api.github.com/repos/MLH-Fellowship/pod-4.1.3-portfolio/issues', {
-      params: {
-      assignee: team.username,
-      state:"closed"
-    }
+  const fetchGithubStats = () => {
+    const requests = teams.map((team,index) => {
+      return axios.get('https://api.github.com/repos/MLH-Fellowship/pod-4.1.3-portfolio/issues', {
+        params: {
+        assignee: team.username,
+        state:"closed"
+      }
+      })
+      .then(response => {
+        vara=response.data.length;
+        const temp=document.getElementById('PRs-' + (index+1));
+        teams[index].count=vara;
+        console.log(teams);
+        temp.innerHTML = vara;
+        console.log(response.data);
+      })
+      .catch(error => console.log(error));
     })
-    .then(response => {
-      vara=response.data.length;
-      const temp=document.getElementById('PRs-' + (index+1));
-      teams[index].count=vara;
-      console.log(teams);
-      temp.innerHTML = vara;
-      console.log(response.data);
-    })
-    .catch(error => console.log(error));
+
+    return Promise.all(requests).then(() => {
+      console.log("map done");
+  });
+    
   }
 
-  function fetchAllPRs() {
-    teams.map((team,index) => {
-      // console.log(team.username + " " + index);
-      fetchGithubStats(index,team);
-    })
-    console.log("complete1");
-  }
-
-  fetchAllPRs();
-
+  fetchGithubStats();
   
 </script>
