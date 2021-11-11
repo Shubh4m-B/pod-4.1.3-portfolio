@@ -12,9 +12,49 @@
   font-family: "Open Sans", sans-serif;
 }
 
+.card-leaderboard {
+  width: 45% !important;
+}
+
+.card-title {
+  font-weight: 700;
+}
+.card-subtitle {
+  font-weight: 600;
+  text-align: center;
+  margin: 5px;
+}
+.card-text{
+  display: flex;
+  justify-content: space-around;
+}
+
+.center-content{
+  display:flex;
+  justify-content: center;
+}
+
+.github-image{
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.label {
+  margin: 5px auto;
+  font-size: 0.9rem;
+}
+
+.leaderboard-table{
+  margin: 40px 90px;
+}
+
 @media only screen and (max-width: 1500px) {
   .card-container {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .card-leaderboard {
+    width: 50% !important;
   }
 }
 
@@ -22,11 +62,44 @@
   .card-container {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .card-leaderboard {
+    width: 50% !important;
+  }
+
+  .github-image{
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+  }
+
+  .leaderboard-table{
+    margin: 30px 70px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   .card-container {
     grid-template-columns: 1fr;
+  }
+
+  .card-leaderboard {
+    width: 75% !important;
+    background-color: none;
+  }
+
+  .github-stats img {
+    max-width: 90%;
+  }
+
+  .github-image{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+  }
+
+  .leaderboard-table{
+    margin: 25px 50px;
   }
 }
 
