@@ -1,7 +1,7 @@
 ---
 ---
 
-var ourMap = L.map('map').setView([0, 0], 1);
+var ourMap = L.map('map').setView([0, 0], 2);
 
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -17,7 +17,7 @@ var fellows = {{ site.data.fellows | jsonify}};
 fellows.forEach((fellow)=>{
     var marker = L.marker([fellow.location.latitude, fellow.location.longitude]).addTo(ourMap);
 
-    const card = ` 
+    const card = `
       <div class="container">
         <h4><b>${fellow.name}</b></h4>
         ${fellow.location.name}<br/>

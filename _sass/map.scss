@@ -1,0 +1,16 @@
+#map {
+    height: 600px; 
+    width:60%;
+    border:5px dashed  black;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (max-width: 500px) {
+    #map {
+        height: 400px; ;
+        width: 100%;
+    }
+}
