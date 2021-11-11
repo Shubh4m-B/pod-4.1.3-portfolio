@@ -8,6 +8,10 @@
     margin-right: auto;
 }
 
+.marker {
+    border-radius: 50%;
+}
+
 @media only screen and (max-width: 500px) {
     #map {
         height: 400px; ;
