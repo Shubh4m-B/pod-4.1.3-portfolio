@@ -1,3 +1,11 @@
+.projects-heading {
+  font-size: 35px;
+}
+@media (max-width: 500px) {
+  .projects-heading {
+    font-size: 25px;
+  }
+}
 .project-card {
   min-height: 450px;
   overflow: hidden;
