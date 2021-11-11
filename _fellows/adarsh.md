@@ -2,8 +2,10 @@
 name: Adarsh Naidu
 college: NITK
 location: Bangalore, IN
-img: aaron.jpg
+img: adarsh.jpg
 linkedin: https://www.linkedin.com/in/adarshnaidu/
+twitter: https://twitter.com/barely_adarsh
+instagram: https://www.instagram.com/naidu.adarsh2511/
 ---
 
-hello hello, I'm angela, artist and developer 🌼 student at stanford; intern at zynga 🌱 happy to be here! 🌿 let's code the best we can!
+Hello everyone, I'm a student developer studying in NITK 🌼 I love anime, so suggest me your favorites 🌱 happy to be here! 🌿 let's code the best we can!
