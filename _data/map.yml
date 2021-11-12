@@ -1,0 +1,115 @@
+- name: Will
+  img: ./assets/img/logo.jpg
+  git: https://github.com/wrussell1999
+  location:
+    name: London, UK
+    longitude: -0.118092
+    latitude: 51.509865
+
+- name: Grace Omotoso
+  img: ./assets/img/grace_omotoso.jpg
+  git: https://github.com/grace-omotoso
+  location:
+    name: Murfreesboro, United States
+    latitude: 35.846111
+    longitude: -86.391945
+
+- name: Sai Keshari
+  img: https://github.com/saikeshari.png
+  git: https://github.com/saikeshari
+  location:
+    name: Delhi, India
+    latitude: 28.556160
+    longitude: 77.100281
+
+- name: Neha Kumari
+  img: https://github.com/neha-93.png
+  git: https://github.com/neha-93
+  location:
+    name: Ranchi, India
+    longitude: 85.296013
+    latitude: 23.344315
+
+
+- name: Yuheng Wu
+  img: ./assets/img/Yuheng-Wu.jpg
+  git: https://github.com/iamwyh2019
+  location:
+    name: Beijing, China
+    latitude: 39.916668
+    longitude: 116.383331
+
+- name: Abdulrahman Yusuf
+  img: https://github.com/Young-Einstein10.png
+  git: https://github.com/Young-Einstein10
+  location:
+    name: Lagos, Nigeria
+    longitude: 3.406448
+    latitude: 6.465422
+
+
+- name: Ojuswi Rastogi
+  img: ./assets/img/ojuswi.jpg
+  git: https://github.com/OjusWiZard
+  location:
+    name: Noida, India
+    longitude: 77.3603628
+    latitude: 28.6134639
+
+
+- name: Gaurav Kumar
+  img: ./assets/img/gaurav.jpeg
+  git: https://github.com/GrayFlash
+  location:
+    name: Bharuch, India
+    latitude: 21.705723
+    longitude: 72.998199
+
+- name: Adarsh Naidu
+  img: https://github.com/adarshnaidu.png
+  git: https://github.com/adarshnaidu
+  location:
+    name: Bengaluru, India
+    longitude: 77.580643
+    latitude: 12.972442
+
+- name: Priya Bihani
+  img: ./assets/img/Priya.JPG
+  git: https://github.com/PriyaBihani
+  location:
+    name: Delhi, India
+    latitude: 28.6691
+    longitude: 77.0929
+
+
+- name: Akshita Dixit
+  img: https://github.com/akshitadixit.png
+  git: https://github.com/akshitadixit
+  location:
+    name: Kanpur, India
+    longitude: 80.331871
+    latitude: 26.449923
+
+- name: Shubham Bhardwaj
+  img: ./assets/img/shubham.jpg
+  git: https://github.com/Shubh4m-B
+  location:
+    name: Delhi, India
+    latitude: 28.644800
+    longitude: 77.216721
+
+- name: Sumana Basu
+  img: ./assets/img/sumana.jpeg
+  git: https://github.com/sumana2001
+  location:
+    name: Noida, India
+    latitude: 28.652946
+    longitude: 77.302284
+
+- name: Hou Chi Chan
+  img: ./assets/img/HouChi.jpg
+  git: https://github.com/SciencePotato
+  location:
+    name: Massachusetts, United States
+    longitude: -71.382439
+    latitude: 42.407211

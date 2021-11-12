@@ -12,11 +12,11 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
     accessToken: 'pk.eyJ1Ijoib2p1c3dpIiwiYSI6ImNrdnR3djhiaTMxYXMycm91ZTl0cTQ3NjEifQ.K6iJsG5RDE7rZFF8tzel9w'
 }).addTo(ourMap);
 
-var fellows = {{ site.data.fellows | jsonify}};
+var fellows = {{ site.data.map | jsonify}};
 
 fellows.forEach((fellow) => {
     var markerIcon = L.icon({
-        iconUrl: './assets/img/'+fellow.img,
+        iconUrl: fellow.img,
         shadowUrl: './assets/img/shadow.png',
     
         iconSize:     [40, 40], // size of the icon
