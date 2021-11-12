@@ -1,61 +1,46 @@
+.background {
+  width: 100%;
+  background: url("/assets/img/background-large.jpg");
+  background-size: cover;
+  min-width: fit-content;
+}
 .profile {
+  width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  background: linear-gradient(-45deg, #0B0742, #120C6E, #5E72EB, #FF9190);
-    background-size: 400% 400%;
-    animation: gradient 11s ease infinite;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  font-size: large;
+}
+.profile-text {
+  text-align: center;
+  font-size: 1.7rem;
+  margin-top: -15px;
+  font-weight: 900;
+  color: whitesmoke;
+}
 
+.profile-picture {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 250px;
+  height: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+  display: inline;
+  padding: 30px;
+}
+
+@media (max-width: 600px) {
+  .background{
+    background: url("/assets/img/background-medium.jpg");
+  }
+}
+
+@media (max-width: 360px) {
   .profile-text {
-    text-align: center;
-    font-size: 1.7rem;
-    font-weight: 900;
-    color: whitesmoke;
-  }
-
-  img {
-    border-radius: 50%;
-    max-width: 200%;
-    max-height: 200%;
-    height: 200px;
-    width: 200px;
-    padding: 20px;
-    margin-top: 60px;
-  }
-
-  .profile-picture {
-    margin: 55px auto 10px auto;
-    height: 250px;
-    transition: all 0.3s;
-  }
-}
-
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-@media screen and (min-width: 1300px) {
-  .profile .profile-picture {
-    margin: 65px auto 10px auto;
-  }
-}
-
-@media screen and (max-width: 432px) {
-  .profile .profile-picture {
-    margin: 45px auto 10px auto;
-    height: 55vw;
-    min-height: 140px;
-  }
-
-  .profile-text{
     font-size: 1.2rem;
   }
 }
