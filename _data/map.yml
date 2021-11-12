@@ -7,7 +7,7 @@
     latitude: 51.509865
 
 - name: Grace Omotoso
-  img: ./assets/img/grace_omotoso.jpg
+  img: https://drive.google.com/uc?export=view&id=1FedIKexwEYBBwpQ8thcFBCH4giH6493q
   git: https://github.com/grace-omotoso
   location:
     name: Murfreesboro, United States
@@ -32,7 +32,7 @@
 
 
 - name: Yuheng Wu
-  img: ./assets/img/Yuheng-Wu.jpg
+  img: https://drive.google.com/uc?export=view&id=1hpvllNIyQ6vKSAz2X4F5vKgfvenQZehx
   git: https://github.com/iamwyh2019
   location:
     name: Beijing, China
@@ -49,7 +49,7 @@
 
 
 - name: Ojuswi Rastogi
-  img: ./assets/img/ojuswi.jpg
+  img: https://drive.google.com/uc?export=view&id=1p_mrZBUzcMTfakbbGiW9w9fh1e2r2isB
   git: https://github.com/OjusWiZard
   location:
     name: Noida, India
@@ -58,7 +58,7 @@
 
 
 - name: Gaurav Kumar
-  img: ./assets/img/gaurav.jpeg
+  img: https://drive.google.com/uc?export=view&id=1Lsi8HrWMMMLrOqF9lK5iOAZsObfYbiC4
   git: https://github.com/GrayFlash
   location:
     name: Bharuch, India
@@ -74,7 +74,7 @@
     latitude: 12.972442
 
 - name: Priya Bihani
-  img: ./assets/img/Priya.JPG
+  img: https://drive.google.com/uc?export=view&id=14-Liv1B2e1lMvXAbZlYmmkEyyO6Xnvxo
   git: https://github.com/PriyaBihani
   location:
     name: Delhi, India
@@ -91,7 +91,7 @@
     latitude: 26.449923
 
 - name: Shubham Bhardwaj
-  img: ./assets/img/shubham.jpg
+  img: https://drive.google.com/uc?export=view&id=1FJeROxjALZHP1bCkHSLN1R-ULWIedYCv
   git: https://github.com/Shubh4m-B
   location:
     name: Delhi, India
@@ -99,7 +99,7 @@
     longitude: 77.216721
 
 - name: Sumana Basu
-  img: ./assets/img/sumana.jpeg
+  img: https://drive.google.com/uc?export=view&id=1lUUu8Pf89g_gEeegzGZau4vgWpb8ZLsr
   git: https://github.com/sumana2001
   location:
     name: Noida, India
@@ -107,7 +107,7 @@
     longitude: 77.302284
 
 - name: Hou Chi Chan
-  img: ./assets/img/HouChi.jpg
+  img: https://drive.google.com/uc?export=view&id=1WYwIe7WsaZaoJJ-Y5umaOwR7G4fIjUWY
   git: https://github.com/SciencePotato
   location:
     name: Massachusetts, United States
