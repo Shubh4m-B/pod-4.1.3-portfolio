@@ -1,0 +1,18 @@
+.aboutus {
+	margin-top: 2rem;
+	&-card {
+		background-color: #3c96de;
+		border-radius: 5px;
+		padding: 2%;
+		color: #fff;
+		box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+			rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+		h1 {
+			font-weight: 700;
+		}
+		.teamName {
+			font-size: 1.3rem;
+			font-weight: 600;
+		}
+	}
+}

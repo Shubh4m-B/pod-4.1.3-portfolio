@@ -8,9 +8,10 @@
 @import 'loader';
 @import 'description';
 @import 'scrollButton';
+@import 'aboutUs.scss';
 
-*{
-  scroll-behavior: smooth;
+* {
+	scroll-behavior: smooth;
 }
 
 body {
