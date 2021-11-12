@@ -1,27 +1,61 @@
 .profile {
-    background-color: #133667 !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(-45deg, #0B0742, #120C6E, #5E72EB, #FF9190);
+    background-size: 400% 400%;
+    animation: gradient 7s ease infinite;
+
+  .profile-text {
     text-align: center;
-    height: 320px;
-    margin-bottom: 50px;
+    font-size: 1.7rem;
+    font-weight: 900;
+    color: whitesmoke;
+  }
+
+  img {
+    border-radius: 50%;
+    max-width: 200%;
+    max-height: 200%;
+    height: 200px;
+    width: 200px;
+    padding: 20px;
     margin-top: 60px;
-    h1 {
-        font-size: 50px;
-        font-weight: 700;
-        color: white;
+  }
+
+  .profile-picture {
+    margin: 90px auto 10px auto;
+    height: 250px;
+    transition: all 0.3s;
+  }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
     }
-    
-    img {
-        border-radius: 50%;
-        max-width: 100%;
-        max-height: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        display: inline;        
-        padding: 20px;
+    50% {
+        background-position: 100% 50%;
     }
-    
-    .profile-picture {
-        margin-bottom: 30px;
-        height: 200px;
+    100% {
+        background-position: 0% 50%;
     }
+}
+
+@media screen and (min-width: 1300px) {
+  .profile .profile-picture {
+    margin: 100px auto 10px auto;
+  }
+}
+
+@media screen and (max-width: 432px) {
+  .profile .profile-picture {
+    margin: 70px auto 10px auto;
+    height: 55vw;
+    min-height: 140px;
+  }
+
+  .profile-text{
+    font-size: 1.2rem;
+  }
 }
