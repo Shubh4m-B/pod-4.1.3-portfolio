@@ -4,7 +4,7 @@
   align-items: center;
   background: linear-gradient(-45deg, #0B0742, #120C6E, #5E72EB, #FF9190);
     background-size: 400% 400%;
-    animation: gradient 7s ease infinite;
+    animation: gradient 11s ease infinite;
 
   .profile-text {
     text-align: center;
@@ -24,7 +24,7 @@
   }
 
   .profile-picture {
-    margin: 90px auto 10px auto;
+    margin: 55px auto 10px auto;
     height: 250px;
     transition: all 0.3s;
   }
@@ -44,13 +44,13 @@
 
 @media screen and (min-width: 1300px) {
   .profile .profile-picture {
-    margin: 100px auto 10px auto;
+    margin: 65px auto 10px auto;
   }
 }
 
 @media screen and (max-width: 432px) {
   .profile .profile-picture {
-    margin: 70px auto 10px auto;
+    margin: 45px auto 10px auto;
     height: 55vw;
     min-height: 140px;
   }
