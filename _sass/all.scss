@@ -25,6 +25,13 @@ h2 {
 	text-align: center;
 }
 
+.heading {
+	font-size: 35px;
+	@media screen and (max-width: 500px) {
+		font-size: 25px;
+	}
+}
+
 .card {
 	display: flex;
 	flex-direction: row;

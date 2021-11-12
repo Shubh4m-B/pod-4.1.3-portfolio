@@ -1,3 +1,9 @@
+<a href="{{ '/' | relative_url }}">
+    <div class="nav-logo">
+        <img src="./assets/img/mlh-prep.png" />
+    </div>
+</a>
+
 <header class="nav-bar">
 
     <div class="nav-container">
@@ -56,6 +62,22 @@
 <script src="https://code.jquery.com/jquery-latest.js"></script>
 
 <script type="text/javascript">
+
+    // script to animate the visibility of the navbar here
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+        // console.log(document.documentElement.scrollTop);
+        if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 0) {
+            document.getElementsByClassName("nav-bar")[0].style.top = "0";
+        } else {
+            document.getElementsByClassName("nav-bar")[0].style.top = "-200px";
+            document.querySelector(".sidepane").classList.remove("expanded");
+            document.querySelector("#top").classList.remove("top");
+            document.querySelector("#middle").classList.remove("middle");
+            document.querySelector("#bottom").classList.remove("bottom");
+        }
+    }
 
     // To handle sidebar toggle
     const sidepane = document.querySelector(".sidepane");
