@@ -6,6 +6,11 @@
 @import "project";
 @import "map";
 @import "loader";
+@import "scrollButton";
+
+* {
+  scroll-behavior: smooth;
+}
 
 .card-container {
   display: grid;
@@ -25,17 +30,17 @@
   text-align: center;
   margin: 5px;
 }
-.card-text{
+.card-text {
   display: flex;
   justify-content: space-around;
 }
 
-.center-content{
-  display:flex;
+.center-content {
+  display: flex;
   justify-content: center;
 }
 
-.github-image{
+.github-image {
   border-radius: 50%;
   width: 100px;
   height: 100px;
@@ -46,7 +51,7 @@
   font-size: 0.9rem;
 }
 
-.leaderboard-table{
+.leaderboard-table {
   margin: 40px 90px;
 }
 
@@ -68,13 +73,13 @@
     width: 50% !important;
   }
 
-  .github-image{
+  .github-image {
     border-radius: 50%;
     width: 75px;
     height: 75px;
   }
 
-  .leaderboard-table{
+  .leaderboard-table {
     margin: 30px 70px;
   }
 }
@@ -93,13 +98,13 @@
     max-width: 90%;
   }
 
-  .github-image{
+  .github-image {
     border-radius: 50%;
     width: 60px;
     height: 60px;
   }
 
-  .leaderboard-table{
+  .leaderboard-table {
     margin: 25px 50px;
   }
 }
