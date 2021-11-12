@@ -1,10 +1,76 @@
 <header class="nav-bar">
-    <div class="nav-content">
-        <a href="{{ '/' | relative_url }}">
-            <div class="nav-logo">
-                <img src="./assets/img/mlh-prep.png" />
+
+    <div class="nav-container">
+        <!-- MLH PREP logo -->
+        <div class="brand">
+            <a href="{{ '/' | relative_url }}">
+                <div class="nav-logo">
+                    <img src="./assets/img/mlh-prep.png" />
+                </div>
+            </a>
+        </div>
+
+        <nav>
+            <!-- The navbar links in full screen -->
+            <ul class="nav-list">
+                <li>
+                    <a href="{{ '/' | relative_url }}">Home</a>
+                </li>
+                <li>
+                    <a href="#profile-section">Meet the pod</a>
+                </li>
+                <li>
+                    <a href="#project-section">Projects</a>
+                </li>
+                <li>
+                    <a href="#">Locate Fellows</a>
+                </li>
+            </ul>
+
+            <!-- Hamburger icon -->
+            <div class="burger">
+                <div id="top"></div>
+                <div id="middle"></div>
+                <div id="bottom"></div>
             </div>
-        </a>
-        
+
+            <!-- Sidepane for when screen width below 800px -->
+            <div class="sidepane">
+                <ul class="side-links">
+                    <li>
+                        <a href="{{ '/' | relative_url }}">Home</a>
+                    </li>
+                    <li>
+                        <a href="#profile-section">Meet the pod</a>
+                    </li>
+                    <li>
+                        <a href="#project-section">Projects</a>
+                    </li>
+                    <li><a href="#">Locate Fellows</a></li>
+                </ul>
+            </div>
+        </nav>
     </div>
 </header>
+
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+
+<script type="text/javascript">
+
+    // To handle sidebar toggle
+    const sidepane = document.querySelector(".sidepane");
+    sidepane.classList.remove("expanded");
+
+    document.querySelector(".burger").addEventListener('click', () => {
+        const top = document.querySelector("#top");
+        const middle = document.querySelector("#middle");
+        const bottom = document.querySelector("#bottom");
+        const sidepane = document.querySelector(".sidepane");
+
+        sidepane.classList.toggle("expanded");
+        top.classList.toggle("top");
+        middle.classList.toggle("middle");
+        bottom.classList.toggle("bottom");
+    })
+
+</script>

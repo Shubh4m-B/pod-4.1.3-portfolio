@@ -1,19 +1,36 @@
-<h2>Projects</h2>
-<div class="card-container">
-    {% for item in site.data.projects %}
-    {% if item.page-name %}
+<h2 class="projects-heading" id="project-section" data-aos="fade-up" data-aos-duration="500">
+  Projects
+</h2>
+<div class="card-container" data-aos="fade-up" data-aos-duration="700">
+  {% for item in site.data.projects %}
+  <div class="card project-card">
     <a href="/projects/{{ item.page-name }}">
-    {% else %}
-    <a>
-    {% endif %}
-      <div class="card">
-        <div class="info">
-          <p class="title">{{ item.title }}</p>
-          <p class="location">{{ item.event }}</p>
-          <p class="dates">{{ item.date }}</p>
+      <div class="img">
+        <img src="../assets/img/{{ item.img }}" alt="" id="image" />
+      </div>
+      <div class="content">
+        <h2>{{item.title}}</h2>
+        <p class="event">{{item.event}}</p>
+        <p class="date">{{item.date}}</p>
+        <div class="icons">
+          <a class="project-button" href="{{ item.demo-link }}"
+            ><i class="fab fa-youtube">
+              <span>Youtube Link</span>
+            </i></a
+          >
+          <a class="project-button" href="{{ item.project-link }}"
+            ><i class="fas fa-link">
+              <span>Description</span>
+            </i></a
+          >
+          <a class="project-button" href="{{ item.github-link }}"
+            ><i class="fab fa-github">
+              <span>Github</span>
+            </i></a
+          >
         </div>
       </div>
     </a>
-    {% endfor %}
   </div>
-  
+  {% endfor %}
+</div>
