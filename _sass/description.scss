@@ -3,18 +3,8 @@
 }
 
 .fellow-cards-container {
-	// display: flex;
-	// justify-content: center;
-	// align-items: center;
-	// min-height: 70vh;
-
 	.fellow-container {
-		// position: relative;
-		// width: 1280px;
-		// display: flex;
-		// justify-content: center;
-		// align-items: center;
-		// flex-wrap: wrap;
+		display: inherit;
 	}
 
 	& .card {
